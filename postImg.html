@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Postagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="postForm" method="POST">
+            <h2>Nova Postagem</h2>
+            <div class="form-group">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <textarea id="content" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="scriptImg.js"></script>
+</body>
+</html>
